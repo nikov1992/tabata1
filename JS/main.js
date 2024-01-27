@@ -36,9 +36,7 @@ clear.addEventListener('click', function () {
     contador = 0;
     contador2 = 0;
     contador3 = 0;
-
     setTimeout((regACT) => {}, 0);
-
     vis1.innerHTML=0
     vis2.innerHTML=0
     vis3.innerHTML=0  
@@ -87,10 +85,9 @@ function cuentaRedACT () {
             clearInterval(intervaloACT);  //funcion a realizar por x cantidad de tiempo
             contador2 = array[1]; //asigno el intervalo inicial guardado en el array
             vis2.innerHTML = contador2;  // lo vuelvo a representar en el html 
-
             //ejecuto la segunda parte 
             cuentaRegREC();
-        }, contador2*1000);// aca defino el tiempo de ejecucio
+        }, contador2*1000);// aca defino el tiempo de ej
 }
 
 
@@ -99,35 +96,6 @@ start.addEventListener('click', function () {
     array.push(contador, contador2, contador3)
     cuentaRedACT();
 });
-
-
-
-
-
-
-
-
-
-
-    
-    // let cont = 1;
-
-    // while(cont <= contador3){
-        
-    //     cont++;
-    //     cuentaRedACT();
-    // }
-    // contador3 = 5;
-    // while(contador3 >0 ){
-    //     contador3--;
-    //     cuentaRedACT();
-    //     // cuentaRegREC();
-    //     vis3.innerHTML = contador3;
-
-    //     //COMIENZA CUENT REGRESIVA DE regACT con su respectivo set interval
-    // }
-
-
 
 
 
